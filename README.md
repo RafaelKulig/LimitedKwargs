@@ -45,6 +45,10 @@ obj = LimitedKwargs(a=42, b="hello", x="invalid", c=[1, 2, 3])
 # Access the internal dictionary
 print(obj.dictionary)
 # Output:
+#
+# Invalid key(s). These will be ignored:
+#         - x
+# Type LimitedKwargs.VALID_KEYS for valid keys.
 # {
 #     'g': 42,
 #     'h': 'hello',
